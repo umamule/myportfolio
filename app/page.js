@@ -1,5 +1,3 @@
-"use client";
-
 import { personalData } from "@/utils/data/personal-data";
 import AboutSection from "./about";
 import Blog from "./blog";
@@ -11,18 +9,24 @@ import Projects from "./projects";
 import Skills from "./skills";
 
 async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+  const res = await fetch(
+    `https://dev.to/api/articles?username=${personalData.devUsername}`,
+    {
+      // Optional but recommended for Next.js caching
+      next: { revalidate: 3600 }, // revalidate every 1 hour
+    }
+  );
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error("Failed to fetch data");
   }
 
   const data = await res.json();
 
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-
-  return filtered;
-};
+  return data
+    .filter((item) => item?.cover_image)
+    .sort(() => Math.random() - 0.5);
+}
 
 export default async function Home() {
   const blogs = await getData();
@@ -38,5 +42,5 @@ export default async function Home() {
       <Blog blogs={blogs} />
       <ContactSection />
     </>
-  )
-};
+  );
+}
