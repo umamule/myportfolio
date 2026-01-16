@@ -38,7 +38,7 @@ function ContactForm() {
       const res = await axios.post("/api/contact", userInput);
 
 
-      toast.success("Message sent successfully!");
+      toast.success("Message sent successfully!!");
       setUserInput({
         name: "",
         email: "",
