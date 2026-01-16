@@ -1,3 +1,5 @@
+"use client";
+
 import { personalData } from "@/utils/data/personal-data";
 import AboutSection from "./about";
 import Blog from "./blog";
