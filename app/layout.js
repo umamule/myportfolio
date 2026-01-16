@@ -10,9 +10,9 @@ import ScrollToTop from "./components/helper/scroll-to-top";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "SANIKA CHAVAN | PORTFOLIO",
+  title: "UMA MULE | PORTFOLIO",
   description:
-    "This is the portfolio of Sanika Chavan. I am a self-taught developer with strong leadership skills, actively guiding teams and projects toward successful outcomes. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "This is the portfolio of Uma Mule. I am a self-taught developer with strong leadership skills, actively guiding teams and projects toward successful outcomes. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
 };
 
 export default function RootLayout({ children }) {

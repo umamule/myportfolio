@@ -1,11 +1,11 @@
 export const contactsData = {
-    email: 'sanikachavan1806@gmail.com',
-    phone: '+917887403910',
+    email: 'umule33@gmail.com',
+    phone: '+917058235717',
     address: 'Auragabad - 431001, Maharashtra',
-    github: 'https://github.com/sanika391',
-    linkedIn: 'https://www.linkedin.com/in/sanika-chavan-52457b236',
+    github: 'https://github.com/umamule',
+    linkedIn: 'https://www.linkedin.com/in/uma-mule-1a1570280',
     facebook: '#',
-    twitter: 'https://x.com/Sanika391',
+    twitter: '#',
     stackOverflow: '#',
     devUsername: "sanika391"
 }

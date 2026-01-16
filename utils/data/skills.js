@@ -1,17 +1,19 @@
 export const skillsData = [
+  'Prostgress',
   'HTML',
   'CSS',
   'Javascript',
   'React',
-  'Next JS',
+  'Java',
   'MongoDB',
   'MySQL',
   'Git',
   'AWS',
   'Bootstrap',
-  'Figma',
-  'Firebase',
+  'express',
+  'Node',
   'Project Management',
+  'React Native'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
